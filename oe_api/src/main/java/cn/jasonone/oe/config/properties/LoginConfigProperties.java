@@ -16,5 +16,9 @@ public class LoginConfigProperties {
 	 * 登录失败最大尝试次数后，锁定时间（单位：秒）
 	 */
 	private int lockTime = 600;
+	/**
+	 * 是否强制开启指纹验证
+	 */
+	private boolean fingerprint;
 	
 }

@@ -39,3 +39,8 @@ mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
   configuration:
     map-underscore-to-camel-case: true
+
+---
+############## 登录 配置 ##############
+login:
+  fingerprint: false

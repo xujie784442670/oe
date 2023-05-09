@@ -25,14 +25,9 @@ import java.time.temporal.ChronoUnit;
 @Service
 public class PasswordLoginHandler implements LoginHandler {
 	@Resource
-	private PasswordLoginCacheHandler passwordLoginCacheHandler;
-	@Resource
 	private AccountService accountService;
 	@Resource
 	private PasswordEncoder passwordEncoder;
-	
-	@Resource
-	private LoginConfigProperties loginConfigProperties;
 	
 	@Override
 	public LoginType getLoginType() {
@@ -41,45 +36,15 @@ public class PasswordLoginHandler implements LoginHandler {
 	
 	@Override
 	public AccountVO login(AccountDTO accountDTO) {
-		// 检查账号是否锁定
-		if (passwordLoginCacheHandler.isLock(accountDTO.getUsername())) {
-			Duration lockTime = passwordLoginCacheHandler.getLockTime(accountDTO.getUsername());
-			long seconds = lockTime.getSeconds();
-			int minutes = (int) (seconds / 60);
-			if(seconds % 60 > 0){
-				minutes++;
-			}
-			throw new LoginException(OeErrorCode.Login.E6, minutes+"分钟").setData(lockTime.getSeconds());
-		}
 		// 检查账号密码是否正确
 		Account account = accountService.findByUsername(accountDTO.getUsername());
 		if (account == null) {
-			// 尝试登录次数+1
-			passwordLoginCacheHandler.incrTryLoginCount(accountDTO.getUsername());
-			checkTryCount(accountDTO.getUsername());
-			throw new LoginException(OeErrorCode.Login.E1);
+			return null;
 		}
 		// 检查密码是否正确
 		if (!passwordEncoder.matches(accountDTO.getPassword(), account.getPassword(),account.getSalt())) {
-			// 尝试登录次数+1
-			passwordLoginCacheHandler.incrTryLoginCount(accountDTO.getUsername());
-			checkTryCount(accountDTO.getUsername());
-			throw new LoginException(OeErrorCode.Login.E1);
+			return null;
 		}
-		// 尝试登录次数清零
-		passwordLoginCacheHandler.resetTryLoginCount(accountDTO.getUsername());
 		return BeanUtil.copyProperties(account, AccountVO.class);
-	}
-	
-	/**
-	 * 检查尝试登录次数
-	 * @param username
-	 */
-	public void checkTryCount(String username){
-		int tryLoginCount = passwordLoginCacheHandler.getTryLoginCount(username);
-		if (tryLoginCount >= loginConfigProperties.getMaxTryCount() - 3) {
-			Duration duration = Duration.ofSeconds(loginConfigProperties.getLockTime());
-			throw new LoginException(OeErrorCode.Login.E7, tryLoginCount, loginConfigProperties.getMaxTryCount() - tryLoginCount, duration.toMinutes()+"分钟");
-		}
 	}
 }

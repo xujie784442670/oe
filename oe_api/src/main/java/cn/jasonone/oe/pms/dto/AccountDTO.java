@@ -19,6 +19,10 @@ public class AccountDTO {
 	 */
 	private String password;
 	/**
+	 * 浏览器指纹
+	 */
+	private String fingerprint;
+	/**
 	 * 验证码
 	 */
 	private String verifyCode;

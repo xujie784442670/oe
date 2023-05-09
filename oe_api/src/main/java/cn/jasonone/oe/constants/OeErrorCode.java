@@ -58,6 +58,10 @@ public interface OeErrorCode {
 		 * 账号已登陆失败{}次,还有{}次机会,如果全部失败将会被锁定{}
 		 */
 		ErrorCode E7 = new ErrorCode(20206, "账号已登陆失败{}次,还有{}次机会,如果全部失败将会被锁定{}");
+		/**
+		 * 浏览器指纹不能为空
+		 */
+		ErrorCode E8 = new ErrorCode(20207, "浏览器指纹不能为空");
 	}
 	@Data
 	class ErrorCode{
