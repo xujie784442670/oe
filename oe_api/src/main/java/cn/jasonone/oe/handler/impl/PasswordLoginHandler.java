@@ -51,29 +51,35 @@ public class PasswordLoginHandler implements LoginHandler {
 			}
 			throw new LoginException(OeErrorCode.Login.E6, minutes+"分钟").setData(lockTime.getSeconds());
 		}
-		
-		
-		
 		// 检查账号密码是否正确
 		Account account = accountService.findByUsername(accountDTO.getUsername());
 		if (account == null) {
 			// 尝试登录次数+1
 			passwordLoginCacheHandler.incrTryLoginCount(accountDTO.getUsername());
-			int tryLoginCount = passwordLoginCacheHandler.getTryLoginCount(accountDTO.getUsername());
-			if (tryLoginCount >= loginConfigProperties.getMaxTryCount() - 3) {
-				Duration duration = Duration.ofSeconds(loginConfigProperties.getLockTime());
-				throw new LoginException(OeErrorCode.Login.E7, tryLoginCount, loginConfigProperties.getMaxTryCount() - tryLoginCount, duration.toMinutes()+"分钟");
-			}
+			checkTryCount(accountDTO.getUsername());
 			throw new LoginException(OeErrorCode.Login.E1);
 		}
 		// 检查密码是否正确
 		if (!passwordEncoder.matches(accountDTO.getPassword(), account.getPassword(),account.getSalt())) {
 			// 尝试登录次数+1
 			passwordLoginCacheHandler.incrTryLoginCount(accountDTO.getUsername());
+			checkTryCount(accountDTO.getUsername());
 			throw new LoginException(OeErrorCode.Login.E1);
 		}
 		// 尝试登录次数清零
 		passwordLoginCacheHandler.resetTryLoginCount(accountDTO.getUsername());
 		return BeanUtil.copyProperties(account, AccountVO.class);
+	}
+	
+	/**
+	 * 检查尝试登录次数
+	 * @param username
+	 */
+	public void checkTryCount(String username){
+		int tryLoginCount = passwordLoginCacheHandler.getTryLoginCount(username);
+		if (tryLoginCount >= loginConfigProperties.getMaxTryCount() - 3) {
+			Duration duration = Duration.ofSeconds(loginConfigProperties.getLockTime());
+			throw new LoginException(OeErrorCode.Login.E7, tryLoginCount, loginConfigProperties.getMaxTryCount() - tryLoginCount, duration.toMinutes()+"分钟");
+		}
 	}
 }
