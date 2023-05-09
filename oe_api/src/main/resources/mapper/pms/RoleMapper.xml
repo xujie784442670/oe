@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jasonone.oe.pms.mapper.RoleMapper">
+
+    <resultMap id="BaseResultMap" type="cn.jasonone.oe.pms.domain.Role">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="BIT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,code,
+        is_deleted,create_time,update_time
+    </sql>
+    <select id="findByAccountId" resultType="cn.jasonone.oe.pms.domain.Role">
+        select
+        <include refid="Base_Column_List"/>
+        from pms_role
+        where id in (
+        select role_id from pms_account_role where account_id = #{accountId}
+        )
+    </select>
+</mapper>

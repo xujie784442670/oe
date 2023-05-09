@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfeb53f3-f6d8-493a-acee-2a81e8f4427b" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/editstarters.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/db/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/OELauncher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/config/LoginConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/config/ResponseResultConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/config/SaTokenConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/config/properties/LoginConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/constants/BannedServiceName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/constants/OeErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/controller/ExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/controller/RequestAdviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/exception/OeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/handler/CacheHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/handler/LoginHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/handler/PasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/handler/impl/PasswordLoginCacheHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/handler/impl/PasswordLoginHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/domain/Banned.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/domain/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/dto/AccountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/exceptions/LoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/mapper/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/mapper/BannedMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/pojo/LoginType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/BannedService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/impl/BannedServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/pms/vo/AccountVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/controller/CampusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/domain/Campus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/domain/ClassInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/domain/ContactType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/domain/StudentContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/domain/StudentEmergencyContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/mapper/CampusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/mapper/ClassInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/mapper/ContactTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/mapper/StudentContactMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/mapper/StudentEmergencyContactMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/CampusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/ClassInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/ContactTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/StudentContactService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/StudentEmergencyContactService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/impl/CampusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/impl/ClassInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/impl/ContactTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/impl/StudentContactServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/impl/StudentEmergencyContactServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/java/cn/jasonone/oe/sm/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/pms/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/pms/BannedMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/pms/PermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/pms/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/sm/CampusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/sm/ClassInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/sm/ContactTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/sm/StudentContactMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/sm/StudentEmergencyContactMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/main/resources/mapper/sm/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oe_api/src/test/java/BootTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_examination.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="G:\项目管理\apache-maven-3.9.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2PEj8dDQEvzhd5qYcCJ2nH5ksbD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "F:/2209/spring-cloud-alibaba/example-01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "F:/online_examination/oe_api/src/main/java/cn/jasonone/oe/Main.java",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Presentation Assistant",
+    "spring.configuration.checksum": "53e17d82c024e3587f0705deff259355",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.jasonone.oe.handler.impl" />
+      <recent name="cn.jasonone.oe.pms.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OELauncher">
+    <configuration name="BootTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oe_api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BootTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OELauncher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="oe_api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.jasonone.oe.OELauncher" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.jasonone.oe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OELauncher" />
+        <item itemvalue="JUnit.BootTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="dfeb53f3-f6d8-493a-acee-2a81e8f4427b" name="更改" comment="" />
+      <created>1683028978643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683028978643</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
